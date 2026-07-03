@@ -29,3 +29,42 @@ scripts/
 diagrams/
 screenshots/
 ```
+
+## Workflow
+
+1. Administrator prepares a CSV file containing user information.
+2. The Python automation script imports the CSV data.
+3. User records are validated for required fields, email format, and duplicates.
+4. Microsoft Graph API provisions users in Microsoft Entra ID.
+5. Users are assigned to the appropriate security groups.
+6. Execution results are logged for auditing and troubleshooting purposes.
+
+## Architecture
+
+### System Flow
+
+```text
+CSV File
+    │
+    ▼
+Python Automation Script
+    │
+    ▼
+Data Validation
+    │
+    ▼
+Microsoft Graph API
+    │
+    ▼
+Microsoft Entra ID
+    │
+    ▼
+Security Group Assignment
+    │
+    ▼
+Execution Log
+```
+
+### Architecture Diagram
+
+The architecture diagram is located in the `diagrams` folder.
