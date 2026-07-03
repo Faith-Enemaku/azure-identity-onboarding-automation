@@ -80,3 +80,22 @@ Execution Log
 ### Architecture Diagram
 
 The architecture diagram is located in the `diagrams` folder.
+
+## Results
+
+The automation process was successfully executed and validated using Microsoft Entra ID.
+
+### Key Outcomes
+
+- 100 users were successfully created in Microsoft Entra ID
+- Duplicate and invalid records were filtered out during validation
+- Security groups were assigned based on department rules
+- Execution logs were generated for auditing purposes
+
+### Screenshots
+
+Evidence of successful execution can be found in the `/screenshots` folder, including:
+
+- Azure Entra ID user creation results
+- Script execution logs
+- Validation output from the automation process
