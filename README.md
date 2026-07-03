@@ -20,15 +20,24 @@ This project automates user onboarding in Microsoft Entra ID (Azure Active Direc
 - Pandas
 - Git and GitHub
 
-## Project Structure
+## 📁 Project Structure
+
+This project is organized following an enterprise-style structure to separate automation logic, documentation, and operational procedures.
 
 ```text
-docs/
-runbooks/
-scripts/
-diagrams/
-screenshots/
+docs/          → Architecture, security, and identity documentation  
+runbooks/      → Step-by-step operational procedures and troubleshooting guides  
+scripts/       → Python automation scripts for user onboarding and validation  
+diagrams/      → Azure architecture and workflow diagrams  
+screenshots/   → Execution evidence and validation outputs  
 ```
+
+### Why this structure matters
+
+- Improves maintainability of automation scripts
+- Separates documentation from code
+- Supports enterprise-level governance and auditing
+- Makes the project easier to understand for reviewers and recruiters
 
 ## Workflow
 
