@@ -41,12 +41,15 @@ screenshots/   → Execution evidence and validation outputs
 
 ## Workflow
 
-1. Administrator prepares a CSV file containing user information.
-2. The Python automation script imports the CSV data.
-3. User records are validated for required fields, email format, and duplicates.
-4. Microsoft Graph API provisions users in Microsoft Entra ID.
-5. Users are assigned to the appropriate security groups.
-6. Execution results are logged for auditing and troubleshooting purposes.
+This system follows an automated identity provisioning flow:
+
+1. A user onboarding CSV file is prepared by the administrator.
+2. The Python automation script reads and imports the CSV data.
+3. Data validation is performed (required fields, email format, duplicate detection).
+4. Valid user records are sent to Microsoft Graph API.
+5. Microsoft Entra ID creates user accounts automatically.
+6. Users are assigned to security groups based on defined rules.
+7. Execution logs are generated for auditing and tracking purposes.
 
 ## Architecture
 
